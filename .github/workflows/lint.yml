@@ -36,7 +36,7 @@ jobs:
           restore-keys: ${{ runner.os }}-composer-
 
       - name: Prepare Docker dev environment
-        run: ./docker/development/prepare.sh
+        run: ./bin/docker_dev.sh -d php
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
