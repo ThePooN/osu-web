@@ -64,6 +64,7 @@ class ImageProcessor
         }
 
         $exifRotation = exif_read_data($this->inputPath)['Orientation'] ?? null;
+        $arr = array(2, 3, 4, 5, 6, 7, 8);
         $args = match ($exifRotation) {
             2 => '-flip horizontal',
             3 => '-rotate 180',
