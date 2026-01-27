@@ -25,9 +25,7 @@
     <rule ref="PSR12"/>
 
     <!-- Additional rules to more strictly adhere to PSR-12 -->
-    <rule ref="Generic.Arrays.DisallowLongArraySyntax">
-        <type>warning</type>
-    </rule>
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
     <rule ref="Generic.CodeAnalysis.ForLoopShouldBeWhileLoop"/>
     <rule ref="Generic.CodeAnalysis.ForLoopWithTestFunctionCall"/>
     <rule ref="Generic.CodeAnalysis.JumbledIncrementer"/>
