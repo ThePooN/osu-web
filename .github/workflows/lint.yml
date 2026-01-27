@@ -29,6 +29,8 @@ jobs:
           cache: yarn
           node-version: '${{ steps.versions.outputs.node_version }}'
 
+      - run: node -v
+
       - name: Set php version
         uses: shivammathur/setup-php@v2
         with:
