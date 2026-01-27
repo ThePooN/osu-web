@@ -37,6 +37,8 @@ jobs:
 
       - name: Prepare Docker dev environment
         run: ./docker/development/prepare.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - run: 'docker compose exec php yarn lint --max-warnings 54 > /dev/null'
 
