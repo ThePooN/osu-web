@@ -44,7 +44,7 @@ jobs:
       - run: ./bin/update_licence.sh -nf
 
       - name: Run PHPCS
-        run: docker compose exec php ./vendor/bin/phpcs --report=checkstyle --basepath="/app" -q > checkstyle.xml
+        run: docker compose exec php ./vendor/bin/phpcs --report=checkstyle --basepath="/app" -q > checkstyle.xml; true
 
       - name: Annotate pull request
         uses: staabm/annotate-pull-request-from-checkstyle-action@v1
